@@ -64,14 +64,12 @@ h2 span {
   color: #fff;
   text-align: center;
   font-size: 1em;
-  opacity: 0;
-  transform: translate3d(0, 0, 50px);
+  transform: translate(0, 0, 50px);
   transition: 0.5s;
+  top: 20px;
 }
 .parfum-box:hover .parfume-name {
-  top: 20px;
-
-  opacity: 1;
+  color: aqua;
 }
 
 .parfume-detail-button {
@@ -79,12 +77,12 @@ h2 span {
   bottom: 0;
   left: 50%;
   transform: translate3d(-50%, 0, 90px);
-  opacity: 0;
+
   transition: 0.5s;
+  bottom: 20px;
 }
 .parfum-box:hover .parfume-detail-button {
-  opacity: 1;
-  bottom: 20px;
+  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.3);
 }
 .parfume-img {
   position: absolute;
