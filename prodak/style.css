@@ -1,3 +1,6 @@
+.navbar {
+  z-index: 1;
+}
 .judul {
   width: 80%;
   margin: auto;
@@ -38,7 +41,7 @@ p {
   margin-bottom: 30px;
   border-radius: 20px;
 }
-.tombol a {                        
+.tombol a {
   font-size: 30px;
   color: black;
   text-decoration: none;
