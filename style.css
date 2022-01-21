@@ -1,0 +1,99 @@
+h2 {
+  padding-top: 80px;
+  font-size: 50px;
+  font-style: italic;
+}
+h2 span {
+  color: red;
+}
+.des {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* product */
+#my-parfum {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.parfum-box {
+  position: relative;
+  background-color: #212529;
+  border-radius: 10px;
+  height: 500px;
+
+  transform-style: preserve-3d;
+}
+.parfum-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: -100px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.parfum-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+.parfum-box::after {
+  content: 'Parfume';
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 200px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.parfum-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+.parfume-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+.parfum-box:hover .parfume-name {
+  top: 20px;
+
+  opacity: 1;
+}
+
+.parfume-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 90px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.parfum-box:hover .parfume-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+.parfume-img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate3d(-50%, 50%, 100px);
+  transition: 0.5s;
+  max-width: 200px;
+}
+.parfum-box:hover .parfume-img {
+  transform: translate3d(-50%, 50%, 80px) scale(1.2);
+}
